@@ -29,14 +29,14 @@ console.log(check.withdraw());
 
 
 class SavingsAccount extends BankAccount{
-    constructor(ownerName, balance, acctNum,overdraftEnabled){
+    constructor(ownerName, balance, acctNum){
         super(ownerName, balance, acctNum);
-        this.overdraftEnabled = overdraftEnabled;
+        
     }
      withdraw(){
-        this.amt = this.balance - this.overdraftEnabled;
-       return `Current amount due is ${this.amt}`;
+        this.amt = this.balance;
+       return `Current Saving account amount is ${this.amt}`;
      }
 }
-const save = new SavingsAccount('Raj',2000,111,2000);
+const save = new SavingsAccount('Raj',2000,111);
 console.log(save.withdraw());

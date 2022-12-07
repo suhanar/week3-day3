@@ -62,3 +62,7 @@ const chef1 = new Chef('Neil',12,'NY');
 const chef2 = new Chef('John',14,'NJ');
 console.log(chef1.getChefDetails());
 console.log(chef2.getChefDetails());
+
+// this is comments
+// this is comments
+// this is comments
