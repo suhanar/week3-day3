@@ -51,7 +51,7 @@ class Pirate {
     const pirate4 = new Pirate('PearlAgain', 6, 'JackSparrowAgain', 22);
     const pirate5 = new Pirate('VoyagerAgain', 9, 'blackbeardAgain', 15);
     const pirate6 = new Pirate('RogerAgain', 7, 'brownbeardAgain', 45);
-    // console.log(jackSparrow.getShip());
+    
     const jollyRoger = [pirate1, pirate2, pirate3];
     const blackPearl = [pirate4, pirate5, pirate6];
     for (let i = 0; i < jollyRoger.length; i++) {
