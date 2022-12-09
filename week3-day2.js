@@ -94,9 +94,9 @@ for (let i = 0; i < arr1.length; i++) {
     const pirate1 = new Pirate('Pearl', 3, 'Jack Sparrow', 22);
     const pirate2 = new Pirate('Voyager', 5, 'blackbeard', 35);
     const pirate3 = new Pirate('Roger', 8, 'brownbeard', 45);
-    const pirate4 = new Pirate('Pearl1', 6, 'JackSparrow1', 22);
-    const pirate5 = new Pirate('Voyager1', 9, 'blackbeard1', 35);
-    const pirate6 = new Pirate('Roger1', 7, 'brownbeard1', 45);
+    const pirate4 = new Pirate('PearlAgain', 6, 'JackSparrowAgain', 22);
+    const pirate5 = new Pirate('VoyagerAgain', 9, 'blackbeardAgain', 15);
+    const pirate6 = new Pirate('RogerAgain', 7, 'brownbeardAgain', 45);
     // console.log(jackSparrow.getShip());
     const jollyRoger = [pirate1, pirate2, pirate3];
     const blackPearl = [pirate4, pirate5, pirate6];
