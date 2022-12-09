@@ -343,6 +343,9 @@ const combineCats = (cat1,cat2)=>{
     for(let item in cat1){
         if(item == 'breed'){
             obj1[item]=`${cat1[item]}-${cat2[item]}`;
+        }
+        else if(item == 'age'){
+          obj1[item] = 1;        
         }else{
 
             obj1[item]=(cat1[item]+cat2[item]);
