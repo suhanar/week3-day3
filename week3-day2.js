@@ -38,7 +38,7 @@ class Pirate {
         return this.Crew;
     }
 }
-const jackSparrow = new Pirate('Pearl', 3 , 'Jack Sparrow', 22)
+/*const jackSparrow = new Pirate('Pearl', 3 , 'Jack Sparrow', 22)
 console.log(jackSparrow.getShip());
 const blackPearl = new Pirate('Voyager', 5, 'blackbeard', 35)
 // let pirateNames1 = ['Rodger', 'Blackbeard', 'Brownbeard'];
@@ -88,10 +88,24 @@ for (let i = 0; i < arr1.length; i++) {
     }
     for (let i = 0; i < arr2.length; i++) {
         console.log(`The name is ${arr2[i].name} the ship name is ${blackPearl.getShip()} the number of the crew members is ${blackPearl.getCrew()}`)
+    } */
+
+
+    const pirate1 = new Pirate('Pearl', 3, 'Jack Sparrow', 22);
+    const pirate2 = new Pirate('Voyager', 5, 'blackbeard', 35);
+    const pirate3 = new Pirate('Roger', 8, 'brownbeard', 45);
+    const pirate4 = new Pirate('Pearl1', 6, 'JackSparrow1', 22);
+    const pirate5 = new Pirate('Voyager1', 9, 'blackbeard1', 35);
+    const pirate6 = new Pirate('Roger1', 7, 'brownbeard1', 45);
+    // console.log(jackSparrow.getShip());
+    const jollyRoger = [pirate1, pirate2, pirate3];
+    const blackPearl = [pirate4, pirate5, pirate6];
+    for (let i = 0; i < jollyRoger.length; i++) {
+        console.log(`The name is ${jollyRoger[i].getCaptainName()} the ship name is ${jollyRoger[i].getShip()} the number of the crew members is ${jollyRoger[i].getCrew()}`)
     }
-
-
-
+    for (let i = 0; i < blackPearl.length; i++) {
+        console.log(`The name is ${blackPearl[i].getCaptainName()} the ship name is ${blackPearl[i].getShip()} the number of the crew members is ${blackPearl[i].getCrew()}`)
+    }
 
 
 
