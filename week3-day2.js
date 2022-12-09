@@ -41,14 +41,58 @@ class Pirate {
 const jackSparrow = new Pirate('Pearl', 3 , 'Jack Sparrow', 22)
 console.log(jackSparrow.getShip());
 const blackPearl = new Pirate('Voyager', 5, 'blackbeard', 35)
-let pirateNames1 = ['Rodger', 'Blackbeard', 'Brownbeard'];
-let pirateNames2 = ['Jollybeard', 'Ahoy', 'Crackers'];
-for (let i = 0; i < pirateNames1.length; i++) {
-    console.log(`The name is ${pirateNames1[i]} the ship name is ${jackSparrow.getShip()} the number of the crew members is ${jackSparrow.getCrew()}`)
-}
-for (let i = 0; i < pirateNames2.length; i++) {
-    console.log(`The name is ${pirateNames2[i]} the ship name is ${blackPearl.getShip()} the number of the crew members is ${blackPearl.getCrew()}`)
-}
+// let pirateNames1 = ['Rodger', 'Blackbeard', 'Brownbeard'];
+// let pirateNames2 = ['Jollybeard', 'Ahoy', 'Crackers'];
+// for (let i = 0; i < pirateNames1.length; i++) {
+//     console.log(`The name is ${pirateNames1[i]} the ship name is ${jackSparrow.getShip()} the number of the crew members is ${jackSparrow.getCrew()}`)
+// }
+// for (let i = 0; i < pirateNames2.length; i++) {
+//     console.log(`The name is ${pirateNames2[i]} the ship name is ${blackPearl.getShip()} the number of the crew members is ${blackPearl.getCrew()}`)
+// }
+
+
+const arr1 = [
+    {
+        name : 'pirateName1',
+        age : 24
+    },
+    {
+        name : 'piratename2',
+        age : 27
+    },
+    {
+        name : 'pirateName3',
+        age : 30
+    }
+
+];
+
+const arr2 = [
+    {
+        name : 'pirateName4',
+        age : 34
+    },
+    {
+        name : 'piratename5',
+        age : 47
+    },
+    {
+        name : 'pirateName6',
+        age : 50
+    }
+
+];
+
+for (let i = 0; i < arr1.length; i++) {
+        console.log(`The name is ${arr1[i].name} the ship name is ${jackSparrow.getShip()} the number of the crew members is ${jackSparrow.getCrew()}`)
+    }
+    for (let i = 0; i < arr2.length; i++) {
+        console.log(`The name is ${arr2[i].name} the ship name is ${blackPearl.getShip()} the number of the crew members is ${blackPearl.getCrew()}`)
+    }
+
+
+
+
 
 
 
