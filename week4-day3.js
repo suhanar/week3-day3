@@ -90,3 +90,68 @@ while(i<20){
     console.log( "Love me, pet me! HSSSSSS!" )
     i++;
 }
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12,12];
+console.log(nums.length);
+nums.sort();
+console.log(nums[Math.floor(nums.length/2)]);
+
+
+function medianNum(nums){
+for(let i=0;i<nums.length;i++){
+    //nums.sort();
+    //console.log(nums)
+    if(nums.length % 2 == 0){
+        let arr1 = nums.slice(0,Math.floor(nums.length/2));
+        let arr2 = nums.slice(arr1.length);
+        let last=arr1.length-1 ;
+        let first = arr2[0];
+        let sumArr = (first+last)/2;
+        return sumArr;
+        //console.log(first,last)
+    }
+    else{
+        return (nums[Math.floor(nums.length/2)]);
+        //console.log(nums[Math.floor(nums.length/2)]);
+    }
+}
+}
+console.log(medianNum(nums));
+
+
+//Return of the Closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  let  kristynsShoe = kristynsCloset[0];
+  thomsCloset[2].push(kristynsShoe);
+  console.log(thomsCloset);
+  console.log(`Kristyn says: I'm going to wear ${kristynsCloset[1]},${kristynsCloset[3]} and ${kristynsCloset[4]} . Thoms says: I'm going to wear ${thomsCloset[0][1]},${thomsCloset[1][2]} and ${thomsCloset[2][2]}`)
