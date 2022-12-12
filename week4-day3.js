@@ -123,9 +123,14 @@ for(let i=0;i<nums.length;i++){
     //console.log(nums)
     if(nums.length % 2 == 0){
         let arr1 = nums.slice(0,Math.floor(nums.length/2));
+        // console.log(nums);
+         console.log(arr1);
         let arr2 = nums.slice(arr1.length);
-        let last=arr1.length-1 ;
+        //console.log(arr2);
+        let last=arr1[arr1.length-1] ;
+        //console.log(last)
         let first = arr2[0];
+        //console.log(first)
         let sumArr = (first+last)/2;
         return sumArr;
         //console.log(first,last)
