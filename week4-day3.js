@@ -73,12 +73,29 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                     ["Lucinda", "Jacc", "Neff", "Snoop"],
                     ["Petunia", ["Baked Goods", "Waldo"]]];
 
-console.log(whereIsWaldo.slice(1,2));//no mutation
+
+
+
+//console.log(whereIsWaldo.slice(1,2));//no mutation
 console.log(whereIsWaldo.splice(1,1));// mutation happened
 //console.log(whereIsWaldo);
-whereIsWaldo[1][2]='No one';
+//whereIsWaldo[1][2]='No one';
+
+
 //console.log(whereIsWaldo);
 //console.log(whereIsWaldo[2][1][1]);
+for(let i=0;i<whereIsWaldo.length;i++){
+    for(let j=0;j<whereIsWaldo[i].length;j++){
+        if(whereIsWaldo[i][j].indexOf('Neff')!== -1){
+            whereIsWaldo[i][j] = 'No One'
+        }
+        
+    }
+
+}
+
+
+console.log(whereIsWaldo);
 
 //Excited Kitten
 let i=0;
