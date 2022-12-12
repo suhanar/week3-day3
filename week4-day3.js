@@ -40,18 +40,18 @@ wolfy.unshift('GameBoy');
 const ninja = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 for(let i of ninja){
-    console.log(i.toUpperCase());
+   // console.log(i.toUpperCase());
 }
 
 //Methods, Revisited
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
-console.log(favMovies.indexOf('Titanic'));
+//console.log(favMovies.indexOf('Titanic'));
 //The sort() sorts the elements as strings in alphabetical and ascending order.
 //console.log(favMovies.sort());
 favMovies.pop();
 favMovies.push('Guardians of the Galaxy');
-console.log(favMovies.reverse());
+//console.log(favMovies.reverse());
 favMovies.shift();
 //console.log(favMovies.shift()); 
 //console.log(favMovies.unshift()); //18 it will give length of the modified array
@@ -63,7 +63,19 @@ const len = favMovies.length / 2;
 const sliceArray = favMovies.slice(len);
 //console.log(sliceArray);
 //console.log(favMovies);
-console.log(favMovies.indexOf("Fast and Furious" ));  // -1
+//console.log(favMovies.indexOf("Fast and Furious" ));  // -1
 //Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
 
 // we can add any number of element in a const array .it will not show error.
+
+//Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+console.log(whereIsWaldo.slice(1,2));//no mutation
+console.log(whereIsWaldo.splice(1,1));// mutation happened
+//console.log(whereIsWaldo);
+whereIsWaldo[1][2]='No one';
+console.log(whereIsWaldo);
+console.log(whereIsWaldo[2][1][1]);
