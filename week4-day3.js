@@ -77,5 +77,16 @@ console.log(whereIsWaldo.slice(1,2));//no mutation
 console.log(whereIsWaldo.splice(1,1));// mutation happened
 //console.log(whereIsWaldo);
 whereIsWaldo[1][2]='No one';
-console.log(whereIsWaldo);
-console.log(whereIsWaldo[2][1][1]);
+//console.log(whereIsWaldo);
+//console.log(whereIsWaldo[2][1][1]);
+
+//Excited Kitten
+let i=0;
+while(i<20){
+    if(i%2==0){
+        const arr=["...human...why you taking pictures of me?...", "...the catnip made me do it...",  "...why does the red dot always get away..." ];
+        console.log(arr[Math.floor(Math.random()*arr.length)]);
+    }
+    console.log( "Love me, pet me! HSSSSSS!" )
+    i++;
+}
