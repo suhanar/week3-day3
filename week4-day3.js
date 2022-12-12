@@ -160,8 +160,10 @@ const kristynsCloset = [
     console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
   }
 
-  for(let i=0;i<thomsCloset.length;i++){
-    for(let j=0;j<thomsCloset.length;j++){  
-        console.log(thomsCloset[i][j]);
+  for(let i=0;i<thomsCloset.length;i++){  
+    for(let j=0;j<thomsCloset[i].length;j++){  
+       console.log(thomsCloset[i][j]);
     }
   }
+
+  
