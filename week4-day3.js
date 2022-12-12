@@ -26,11 +26,19 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 plantee[2]++;
 
 wolfy[3]='Gotham City';
-console.log(wolfy);
+//console.log(wolfy);
 const arr=[dart[3]];
 arr.push('Hawkins');
 dart[3]=arr;
-console.log(dart);
+//console.log(dart);
 wolfy.shift();
 wolfy.unshift('GameBoy');
-console.log(wolfy);
+//console.log(wolfy);
+
+
+//Yell at the Ninja Turtles
+const ninja = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+
+for(let i of ninja){
+    console.log(i.toUpperCase());
+}
