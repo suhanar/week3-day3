@@ -154,4 +154,14 @@ const kristynsCloset = [
   let  kristynsShoe = kristynsCloset[0];
   thomsCloset[2].push(kristynsShoe);
   console.log(thomsCloset);
-  console.log(`Kristyn says: I'm going to wear ${kristynsCloset[1]},${kristynsCloset[3]} and ${kristynsCloset[4]} . Thoms says: I'm going to wear ${thomsCloset[0][1]},${thomsCloset[1][2]} and ${thomsCloset[2][2]}`)
+  console.log(`Kristyn says: I'm going to wear ${kristynsCloset[1]},${kristynsCloset[3]} and ${kristynsCloset[4]} . Thoms says: I'm going to wear ${thomsCloset[0][1]},${thomsCloset[1][2]} and ${thomsCloset[2][2]}`);
+
+  for(let i=0;i<kristynsCloset.length;i++){
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+  }
+
+  for(let i=0;i<thomsCloset.length;i++){
+    for(let j=0;j<thomsCloset.length;j++){  
+        console.log(thomsCloset[i][j]);
+    }
+  }
