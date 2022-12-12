@@ -85,9 +85,12 @@ let i=0;
 while(i<20){
     if(i%2==0){
         const arr=["...human...why you taking pictures of me?...", "...the catnip made me do it...",  "...why does the red dot always get away..." ];
-        console.log(arr[Math.floor(Math.random()*arr.length)]);
+        console.log(i,arr[Math.floor(Math.random()*arr.length)]);
     }
-    console.log( "Love me, pet me! HSSSSSS!" )
+    else{
+        console.log(i, "Love me, pet me! HSSSSSS!" )
+    }
+    
     i++;
 }
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12,12];
