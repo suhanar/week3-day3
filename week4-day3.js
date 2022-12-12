@@ -69,8 +69,8 @@ const sliceArray = favMovies.slice(len);
 // we can add any number of element in a const array .it will not show error.
 
 //Where is Waldo
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+const whereIsWaldo = [["Timmy","Neff", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc",  "Snoop"],
                     ["Petunia", ["Baked Goods", "Waldo"]]];
 
 
@@ -89,6 +89,7 @@ for(let i=0;i<whereIsWaldo.length;i++){
         if(whereIsWaldo[i][j].indexOf('Neff')!== -1){
             whereIsWaldo[i][j] = 'No One'
         }
+        
         
     }
 
