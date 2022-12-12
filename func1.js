@@ -29,4 +29,4 @@ const arr1 = 7;
 
 const arr2= [1,2,3];
 arr2.push(4);
-console.log(arr2);
+//console.log(arr2);
