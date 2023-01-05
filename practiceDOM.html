@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-cl {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:white;
+            height: 100vh;
+        }
+        .navCl {
+            height:50px;
+            background-color: rgb(6, 6, 83);
+            display:flex;
+            justify-content: flex-start;
+            
+            align-items: center;
+            
+          
+            
+        }
+        .img-cl{
+            width:100px;
+            height:50px;
+            margin-left:700px;
+            
+        }
+        .footer-cl{
+            height:50vh;
+            background-color: blue;
+            display:flex;
+            justify-content: center;
+            
+            align-items: flex-start;
+            flex-direction: column;
+        }
+      
+
+
+    </style>
+</head>
+<body>
+    <nav class="navCl"></nav>
+     <div id="firstDiv">
+        <h1>Welcome to per Scholas</h1>
+        <p>Paragraph</p>
+        <button>Learn More</button>
+        
+        
+     </div>
+     <footer>
+       
+     </footer>
+   
+
+
+    <script>
+        let nav = document.querySelector('nav');
+        nav.classList.add('navCl');
+        let divEl = document.getElementById('firstDiv');
+        divEl.style.backgroundColor = '#111212';
+        divEl.classList.add('flex-cl');
+        let obj = [
+    {text: 'About', href: '/about'},
+    {text: 'Courses', href: '/catalog'},
+    {text: 'Orders', href: '/orders'},
+    {text: 'Account', href: '/account'}
+        ]
+
+        for(let i in obj){
+            let a = document.createElement('a');
+            a.setAttribute('href','obj[i].href');
+            a.textContent = obj[i].text;
+            a.style.color = 'white';
+            a.style.fontSize = '20px';
+            a.style.textDecoration = 'None';
+            a.style.paddingRight='20px';
+            a.style.marginLeft = '20px';
+            nav.appendChild(a);
+
+        }
+
+let img = document.createElement('img');
+img.setAttribute('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJD0sRwsltZKql525q47AY_PkMis45WMmdjQQy5c7hFw&s');
+nav.appendChild(img);
+img.classList.add('img-cl');
+
+let footer = document.querySelector('footer');
+footer.classList.add('footer-cl');
+for(let j in obj){
+    let anchor = document.createElement('a');
+    anchor.textContent = obj[j].text;
+    anchor.style.color = 'white';
+    anchor.style.fontSize = '20px';
+    anchor.style.padding='30px';
+    anchor.classList.add('footer-cl2');
+    footer.appendChild(anchor);
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
